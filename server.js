@@ -24,9 +24,9 @@ app.use((request, response, next) => {
 
 // maintenance page that is not going to prevent
 // any other thing because doesn't have next()
-app.use((request, response) => {
-    response.render('maintenance.hbs');
-});
+// app.use((request, response) => {
+//     response.render('maintenance.hbs');
+// });
 
 // sets a static directory
 app.use(express.static(__dirname + '/public'));
